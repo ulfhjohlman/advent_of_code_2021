@@ -44,6 +44,15 @@ def part2_better():
 
     print("Sliding depth increases: {}".format(count))
 
+def part1_compact():
+    print("Depth increases: {}".format(sum(y > x for x,y in zip(arr[:-1], arr[1:]))))
+
+
+def part2_compact():
+    print("Sliding depth increases: {}".format(sum(y > x for x,y in zip(arr[:-3], arr[3:]))))
+
 part1()
 part2()
 part2_better()
+part1_compact()
+part2_compact()
